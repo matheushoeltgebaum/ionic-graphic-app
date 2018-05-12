@@ -6,11 +6,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { GraphicRectComponent } from '../components/graphic-rect/graphic-rect';
+import { DeviceMotion, DeviceMotionAccelerationData } from '@ionic-native/device-motion';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    GraphicRectComponent
   ],
   imports: [
     BrowserModule,
@@ -19,12 +22,14 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    GraphicRectComponent
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DeviceMotion,
   ]
 })
 export class AppModule {}

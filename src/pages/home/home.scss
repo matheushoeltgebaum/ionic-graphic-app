@@ -1,3 +1,26 @@
-page-home {
-
+.ios, .md {
+ 
+    page-home {
+ 
+        .scroll-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #555555;
+        }
+ 
+        h4 {
+            text-align: center;
+            font-size: 1.2em;
+            color: #fff;
+        }  
+ 
+        graphic-rect {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+ 
+    }
+ 
 }
